@@ -6,18 +6,15 @@ function powerOf(base,exponent) {
 		return 1;
 	}
 	else {
-        var count = 0;
 		var newNum = 1;
-        while (count < exponent) {
-			newNum *= base;
-			count ++;
-		}
+        for (var i = 0; i < exponent; i++) {
+        	newNum *= base;
+        }
         return newNum;
 	}
 
 }
 
-//tests
 console.log(powerOf(9,0));
 console.log(powerOf(2,3));
 console.log(powerOf(1,25));
