@@ -1,8 +1,11 @@
 //Your code here
 var result = 0;
-function exponator(base, exponent) {
-	return base ^ exponent;
+var exponator = function(base, exponent) {
+	result = base;
+	for (var i = 1; i < exponent; i++) {
+		result *= base; 
+	}
+	return result;
 }
 
-result = exponator(2,10);
-console.log(result);
+console.log(exponator(11, 3));
