@@ -1,6 +1,6 @@
 //Your code here
-var o1 = parseInt(prompt("Enter your first operand"));
-var o2 = parseInt(prompt("Enter your second operand"));
+var o1 = parseInt(prompt("Enter the Base"));
+var o2 = parseInt(prompt("Enter the Exponent"));
 var numExp = 1;
 for (var i = 0; i < o2 ; i++){
   numExp = numExp * o1;
